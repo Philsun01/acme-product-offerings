@@ -54,7 +54,7 @@ const render = (productList, id) => {
         root.innerHTML = `<div class = 'card'>
                 <h3><a href = '#'>${product.name}</a></h3>
                 <p>${product.description}</p>
-                <p>Suggested Price ${product.suggestedPrice}</p>
+                <p>Suggested Price $${product.suggestedPrice}</p>
                 <ul>
                     ${product.offers.map(offer=>{
                         return `<li>$${offer.price} offered by ${offer.company}</li>`
@@ -67,7 +67,7 @@ const render = (productList, id) => {
             return `<div class = 'card'>
                 <h3><a href = '#${product.id}'>${product.name}</a></h3>
                 <p>${product.description}</p>
-                <p>Suggested Price ${product.suggestedPrice}</p>
+                <p>Suggested Price $${product.suggestedPrice}</p>
                 <ul>
                     ${product.offers.map(offer=>{
                         return `<li>$${offer.price} offered by ${offer.company}</li>`
